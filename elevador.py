@@ -35,7 +35,7 @@ class Elevator:
             route_exists[0]['total'] = route_exists[0]['total'] + 1
 
     def  move(self):
-        ''' movimenta o elevador para cima ou para baixo '''
+        ''' move elevator to going down or up '''
         while len(self.route) > 0:
             self.is_opened = False
             if (self.route[0]['floor'] - self.current_floor > 0):
